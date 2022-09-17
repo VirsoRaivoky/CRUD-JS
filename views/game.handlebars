@@ -1,0 +1,18 @@
+<div id="game-page">
+    <a href="/games">Voltar</a>
+    <div class="container">
+        <h1>{{game.title}}</h1>
+        <p>Desenvolvido por/pela {{game.dev}}</p>
+        <p>Lançado em {{game.year}}</p>
+        <p>Para a plataforma {{game.platf}}</p>
+        <p>Este jogo possui {{game.yearO}} anos.</p>
+
+        <div class="actions">
+            <a href="/games/edit/{{game.id}}">Editar</a>
+            <form action="/games/remove/{{game.id}}"  method="POST">
+            <input type="submit" value="Remover">
+            </form>
+        </div>
+
+    </div>
+</div>

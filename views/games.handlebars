@@ -1,0 +1,8 @@
+<h1> Jogos Disponiveis</h1>
+<div class="games-containers">
+    {{#each games}}
+    <div>#{{this.id}} - <span class="bold">
+            <a href="/games/{{this.id}}">{{this.title}}</a>
+            </span> </div>
+    {{/each}}
+</div>

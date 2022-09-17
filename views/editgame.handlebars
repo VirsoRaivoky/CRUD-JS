@@ -1,0 +1,29 @@
+<h1>Edite o seu jogo</h1>
+<form class="form" action="/games/updategame" method="POST">
+<input type="hidden" name="id" value="{{game.id}}">
+<div class="form-control">
+    <label for="title">Título:</label>
+    <input type="text" name="title" placeholder="Titulo do Jogo" value="{{game.title}}">
+</div>
+<div class="form-control">
+    <label for="year">Ano de Lançamento:</label>
+    <input type="number" name="year" placeholder="Ano de Lançamento" value="{{game.year}}">
+</div>
+<div class="form-control">
+    <label for="dev">Desenvolvedora:</label>
+    <input type="text" name="dev" placeholder="Desenvolvedora" value="{{game.dev}}">
+</div>
+<div class="form-control">
+    <label for="gender">Genêro:</label>
+    <input type="text" name="gender" placeholder="Genêro" value="{{game.gender}}">
+</div> 
+<div class="form-control">
+    <label for="platf">Plataforma:</label>
+    <input type="text" name="platf" placeholder="Plataforma" value="{{game.platf}}">
+</div>
+<div class="form-control">
+    <label for="age">Faixa Etaria:</label>
+    <input type="number" name="age" placeholder="Faixa etária" value="{{game.age}}">
+</div>
+<input type="submit" value="Editar">
+</form>
